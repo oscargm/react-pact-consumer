@@ -1,0 +1,147 @@
+
+> pact-react-consumer@0.1.0 test:pact C:\Users\garciamo\PoCs\pact\code-examples\pact\pact-react-consumer
+> cross-env CI=true react-scripts test --runInBand --setupFiles ./pact/setup.js --setupTestFrameworkScriptFile ./pact/jest-wrapper.js --testMatch "**/*.test.pact.js"
+
+[[37m2019-10-04T07:54:22.252Z[39m] [36m INFO[39m: pact-node@6.20.0/32804 on RTCMW030283: 
+[90m    [36mCreating Pact Server with options: 
+    consumer = hero-consumer,
+    cors = true,
+    dir = C:\Users\garciamo\PoCs\pact\code-examples\pact\pact-react-consumer\pacts,
+    host = 127.0.0.1,
+    log = C:\Users\garciamo\PoCs\pact\code-examples\pact\pact-react-consumer\logs\pact.log,
+    pactFileWriteMode = update,
+    port = 8080,
+    provider = hero-provider,
+    spec = 2,
+    ssl = false,
+    sslcert = ,
+    sslkey = [39m
+[39m[[37m2019-10-04T07:54:22.253Z[39m] [36m INFO[39m: pact@7.0.3/32804 on RTCMW030283: 
+[90m    [36mSetting up Pact with Consumer "hero-consumer" and Provider "hero-provider"
+       using mock service on Port: "8080"[39m
+[39m[[37m2019-10-04T07:54:26.433Z[39m] [36m INFO[39m: pact-node@6.20.0/32804 on RTCMW030283: [36mCreated 'standalone\win32-1.61.1\bin\pact-mock-service.bat service --consumer 'hero-consumer' --cors 'true' --pact_dir 'C:\Users\garciamo\PoCs\pact\code-examples\pact\pact-react-consumer\pacts' --host '127.0.0.1' --log 'C:\Users\garciamo\PoCs\pact\code-examples\pact\pact-react-consumer\logs\pact.log' --pact-file-write-mode 'update' --port '8080' --provider 'hero-provider' --pact_specification_version '2'' process with PID: 25616[39m
+[[37m2019-10-04T07:54:29.428Z[39m] [31mERROR[39m: pact-node@6.20.0/32804 on RTCMW030283: 
+[90m    [36mPact Binary Error: C:/Users/garciamo/PoCs/pact/code-examples/pact/pact-react-consumer/node_modules/@pact-foundation/pact-node/standalone/win32-1.61.1/lib/vendor/ruby/2.2.0/gems/pact-mock_service-2.12.0/lib/pact/mock_service/request_handlers/interaction_post.rb:1:in `require': cannot load such file -- pact/mock_service/request_handlers/base_administration_request_handler (LoadError)
+    	from C:/Users/garciamo/PoCs/pact/code-examples/pact/pact-react-consumer/node_modules/@pact-foundation/pact-node/standalone/win32-1.61.1/lib/vendor/ruby/2.2.0/gems/pact-mock_service-2.12.0/lib/pact/mock_service/request_handlers/interaction_post.rb:1:in `<top (required)>'
+    	from C:/Users/garciamo/PoCs/pact/code-examples/pact/pact-react-consumer/node_modules/@pact-foundation/pact-node/standalone/win32-1.61.1/lib/vendor/ruby/2.2.0/gems/pact-mock_service-2.12.0/lib/pact/mock_service/request_handlers.rb:1:in `require'
+    	from C:/Users/garciamo/PoCs/pact/code-examples/pact/pact-react-consumer/node_modules/@pact-foundation/pact-node/standalone/win32-1.61.1/lib/vendor/ruby/2.2.0/gems/pact-mock_service-2.12.0/lib/pact/mock_service/request_handlers.rb:1:in `<top (required)>'
+    [39m
+[39m[[37m2019-10-04T07:54:29.429Z[39m] [31mERROR[39m: pact-node@6.20.0/32804 on RTCMW030283: 
+[90m    [36mPact Binary Error: 	from C:/Users/garciamo/PoCs/pact/code-examples/pact/pact-react-consumer/node_modules/@pact-foundation/pact-node/standalone/win32-1.61.1/lib/vendor/ruby/2.2.0/gems/pact-mock_service-2.12.0/lib/pact/mock_service/app.rb:6:in `require'
+    	from C:/Users/garciamo/PoCs/pact/code-examples/pact/pact-react-consumer/node_modules/@pact-foundation/pact-node/standalone/win32-1.61.1/lib/vendor/ruby/2.2.0/gems/pact-mock_service-2.12.0/lib/pact/mock_service/app.rb:6:in `<top (required)>'
+    	from C:/Users/garciamo/PoCs/pact/code-examples/pact/pact-react-consumer/node_modules/@pact-foundation/pact-node/standalone/win32-1.61.1/lib/vendor/ruby/2.2.0/gems/pact-mock_service-2.12.0/lib/pact/mock_service/run.rb:2:in `require'
+    	from C:/Users/garciamo/PoCs/pact/code-examples/pact/pact-react-consumer/node_modules/@pact-foundation/pact-node/standalone/win32-1.61.1/lib/vendor/ruby/2.2.0/gems/pact-mock_service-2.12.0/lib/pact/mock_service/run.rb:2:in `<top (required)>'
+    	from C:/Users/garciamo/PoCs/pact/code-examples/pact/pact-react-consumer/node_modules/@pact-foundation/pact-node/standalone/win32-1.61.1/lib/vendor/ruby/2.2.0/gems/pact-mock_service-2.12.0/lib/pact/mock_service/cli.rb:33:in `require'
+    	from C:/Users/garciamo/PoCs/pact/code-examples/pact/pact-react-consumer/node_modules/@pact-foundation/pact-node/standalone/win32-1.61.1/lib/vendor/ruby/2.2.0/gems/pact-mock_service-2.12.0/lib/pact/mock_service/cli.rb:33:in `service'
+    	from C:/Users/garciamo/PoCs/pact/code-examples/pact/pact-react-consumer/node_modules/@pact-foundation/pact-node/standalone/win32-1.61.1/lib/vendor/ruby/2.2.0/gems/thor-0.20.0/lib/thor/command.rb:27:in `run'
+    	from C:/Users/garciamo/PoCs/pact/code-examples/pact/pact-react-consumer/node_modules/@pact-foundation/pact-node/standalone/win32-1.61.1/lib/vendor/ruby/2.2.0/gems/thor-0.20.0/lib/thor/invocation.rb:126:in `invoke_command'
+    	from C:/Users/garciamo/PoCs/pact/code-examples/pact/pact-react-consumer/node_modules/@pact-foundation/pact-node/standalone/win32-1.61.1/lib/vendor/ruby/2.2.0/gems/thor-0.20.0/lib/thor.rb:387:in `dispatch'
+    	from C:/Users/garciamo/PoCs/pact/code-examples/pact/pact-react-consumer/node_modules/@pact-foundation/pact-node/standalone/win32-1.61.1/lib/vendor/ruby/2.2.0/gems/thor-0.20.0/lib/thor/base.rb:466:in `start'
+    	from C:/Users/garciamo/PoCs/pact/code-examples/pact/pact-react-consumer/node_modules/@pact-foundation/pact-node/standalone/win32-1.61.1/lib/app/pact-mock-service.rb:15:in `<main>'
+    [39m
+[39m[[37m2019-10-04T07:54:29.458Z[39m] [35m WARN[39m: pact-node@6.20.0/32804 on RTCMW030283: [36mPact exited with code 1.[39m
+[[37m2019-10-04T07:54:29.458Z[39m] [36m INFO[39m: pact-node@6.20.0/32804 on RTCMW030283: [36mRemoving Pact with PID: 25616[39m
+  console.error node_modules/jest-environment-jsdom/node_modules/jsdom/lib/jsdom/virtual-console.js:29
+    Error: Error: connect ECONNREFUSED 127.0.0.1:8080
+        at Object.dispatchError (C:\Users\garciamo\PoCs\pact\code-examples\pact\pact-react-consumer\node_modules\jest-environment-jsdom\node_modules\jsdom\lib\jsdom\living\xhr-utils.js:65:19)
+        at Request.client.on.err (C:\Users\garciamo\PoCs\pact\code-examples\pact\pact-react-consumer\node_modules\jest-environment-jsdom\node_modules\jsdom\lib\jsdom\living\xmlhttprequest.js:676:20)
+        at Request.emit (events.js:187:15)
+        at Request.onRequestError (C:\Users\garciamo\PoCs\pact\code-examples\pact\pact-react-consumer\node_modules\request\request.js:881:8)
+        at ClientRequest.emit (events.js:182:13)
+        at Socket.socketErrorListener (_http_client.js:392:9)
+        at Socket.emit (events.js:182:13)
+        at emitErrorNT (internal/streams/destroy.js:82:8)
+        at emitErrorAndCloseNT (internal/streams/destroy.js:50:3)
+        at process._tickCallback (internal/process/next_tick.js:63:19) undefined
+
+  console.error node_modules/jest-jasmine2/build/jasmine/Env.js:157
+    Unhandled error
+
+  console.error node_modules/jest-jasmine2/build/jasmine/Env.js:158
+    Error: Network Error
+        at createError (C:\Users\garciamo\PoCs\pact\code-examples\pact\pact-react-consumer\node_modules\axios\lib\core\createError.js:16:15)
+        at XMLHttpRequest.handleError (C:\Users\garciamo\PoCs\pact\code-examples\pact\pact-react-consumer\node_modules\axios\lib\adapters\xhr.js:87:14)
+        at XMLHttpRequest.el.addEventListener.event (C:\Users\garciamo\PoCs\pact\code-examples\pact\pact-react-consumer\node_modules\jest-environment-jsdom\node_modules\jsdom\lib\jsdom\living\helpers\create-event-accessor.js:33:32)
+        at invokeEventListeners (C:\Users\garciamo\PoCs\pact\code-examples\pact\pact-react-consumer\node_modules\jest-environment-jsdom\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:193:27)
+        at XMLHttpRequestEventTargetImpl._dispatch (C:\Users\garciamo\PoCs\pact\code-examples\pact\pact-react-consumer\node_modules\jest-environment-jsdom\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:119:9)
+        at XMLHttpRequestEventTargetImpl.dispatchEvent (C:\Users\garciamo\PoCs\pact\code-examples\pact\pact-react-consumer\node_modules\jest-environment-jsdom\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:82:17)
+        at XMLHttpRequest.dispatchEvent (C:\Users\garciamo\PoCs\pact\code-examples\pact\pact-react-consumer\node_modules\jest-environment-jsdom\node_modules\jsdom\lib\jsdom\living\generated\EventTarget.js:157:21)
+        at requestErrorSteps (C:\Users\garciamo\PoCs\pact\code-examples\pact\pact-react-consumer\node_modules\jest-environment-jsdom\node_modules\jsdom\lib\jsdom\living\xhr-utils.js:132:7)
+        at Object.dispatchError (C:\Users\garciamo\PoCs\pact\code-examples\pact\pact-react-consumer\node_modules\jest-environment-jsdom\node_modules\jsdom\lib\jsdom\living\xhr-utils.js:62:3)
+        at Request.client.on.err (C:\Users\garciamo\PoCs\pact\code-examples\pact\pact-react-consumer\node_modules\jest-environment-jsdom\node_modules\jsdom\lib\jsdom\living\xmlhttprequest.js:676:20)
+        at Request.emit (events.js:187:15)
+        at Request.onRequestError (C:\Users\garciamo\PoCs\pact\code-examples\pact\pact-react-consumer\node_modules\request\request.js:881:8)
+        at ClientRequest.emit (events.js:182:13)
+        at Socket.socketErrorListener (_http_client.js:392:9)
+        at Socket.emit (events.js:182:13)
+        at emitErrorNT (internal/streams/destroy.js:82:8)
+        at emitErrorAndCloseNT (internal/streams/destroy.js:50:3)
+        at process._tickCallback (internal/process/next_tick.js:63:19)
+
+[[37m2019-10-04T07:54:34.560Z[39m] [36m INFO[39m: pact-node@6.20.0/32804 on RTCMW030283: [36mRemoving Pact with PID: 25616[39m
+  console.error node_modules/jest-environment-jsdom/node_modules/jsdom/lib/jsdom/virtual-console.js:29
+    Error: Error: connect ECONNREFUSED 127.0.0.1:8080
+        at Object.dispatchError (C:\Users\garciamo\PoCs\pact\code-examples\pact\pact-react-consumer\node_modules\jest-environment-jsdom\node_modules\jsdom\lib\jsdom\living\xhr-utils.js:65:19)
+        at Request.client.on.err (C:\Users\garciamo\PoCs\pact\code-examples\pact\pact-react-consumer\node_modules\jest-environment-jsdom\node_modules\jsdom\lib\jsdom\living\xmlhttprequest.js:676:20)
+        at Request.emit (events.js:187:15)
+        at Request.onRequestError (C:\Users\garciamo\PoCs\pact\code-examples\pact\pact-react-consumer\node_modules\request\request.js:881:8)
+        at ClientRequest.emit (events.js:182:13)
+        at Socket.socketErrorListener (_http_client.js:392:9)
+        at Socket.emit (events.js:182:13)
+        at emitErrorNT (internal/streams/destroy.js:82:8)
+        at emitErrorAndCloseNT (internal/streams/destroy.js:50:3)
+        at process._tickCallback (internal/process/next_tick.js:63:19) undefined
+
+  console.error node_modules/jest-jasmine2/build/jasmine/Env.js:157
+    Unhandled error
+
+  console.error node_modules/jest-jasmine2/build/jasmine/Env.js:158
+    Error: Network Error
+        at createError (C:\Users\garciamo\PoCs\pact\code-examples\pact\pact-react-consumer\node_modules\axios\lib\core\createError.js:16:15)
+        at XMLHttpRequest.handleError (C:\Users\garciamo\PoCs\pact\code-examples\pact\pact-react-consumer\node_modules\axios\lib\adapters\xhr.js:87:14)
+        at XMLHttpRequest.el.addEventListener.event (C:\Users\garciamo\PoCs\pact\code-examples\pact\pact-react-consumer\node_modules\jest-environment-jsdom\node_modules\jsdom\lib\jsdom\living\helpers\create-event-accessor.js:33:32)
+        at invokeEventListeners (C:\Users\garciamo\PoCs\pact\code-examples\pact\pact-react-consumer\node_modules\jest-environment-jsdom\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:193:27)
+        at XMLHttpRequestEventTargetImpl._dispatch (C:\Users\garciamo\PoCs\pact\code-examples\pact\pact-react-consumer\node_modules\jest-environment-jsdom\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:119:9)
+        at XMLHttpRequestEventTargetImpl.dispatchEvent (C:\Users\garciamo\PoCs\pact\code-examples\pact\pact-react-consumer\node_modules\jest-environment-jsdom\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:82:17)
+        at XMLHttpRequest.dispatchEvent (C:\Users\garciamo\PoCs\pact\code-examples\pact\pact-react-consumer\node_modules\jest-environment-jsdom\node_modules\jsdom\lib\jsdom\living\generated\EventTarget.js:157:21)
+        at requestErrorSteps (C:\Users\garciamo\PoCs\pact\code-examples\pact\pact-react-consumer\node_modules\jest-environment-jsdom\node_modules\jsdom\lib\jsdom\living\xhr-utils.js:132:7)
+        at Object.dispatchError (C:\Users\garciamo\PoCs\pact\code-examples\pact\pact-react-consumer\node_modules\jest-environment-jsdom\node_modules\jsdom\lib\jsdom\living\xhr-utils.js:62:3)
+        at Request.client.on.err (C:\Users\garciamo\PoCs\pact\code-examples\pact\pact-react-consumer\node_modules\jest-environment-jsdom\node_modules\jsdom\lib\jsdom\living\xmlhttprequest.js:676:20)
+        at Request.emit (events.js:187:15)
+        at Request.onRequestError (C:\Users\garciamo\PoCs\pact\code-examples\pact\pact-react-consumer\node_modules\request\request.js:881:8)
+        at ClientRequest.emit (events.js:182:13)
+        at Socket.socketErrorListener (_http_client.js:392:9)
+        at Socket.emit (events.js:182:13)
+        at emitErrorNT (internal/streams/destroy.js:82:8)
+        at emitErrorAndCloseNT (internal/streams/destroy.js:50:3)
+        at process._tickCallback (internal/process/next_tick.js:63:19)
+
+[[37m2019-10-04T07:54:35.925Z[39m] [36m INFO[39m: pact-node@6.20.0/32804 on RTCMW030283: 
+[90m    [36mDeleting Pact Server with options: 
+    consumer = hero-consumer,
+    cors = true,
+    dir = C:\Users\garciamo\PoCs\pact\code-examples\pact\pact-react-consumer\pacts,
+    host = 127.0.0.1,
+    log = C:\Users\garciamo\PoCs\pact\code-examples\pact\pact-react-consumer\logs\pact.log,
+    pactFileWriteMode = update,
+    port = 8080,
+    provider = hero-provider,
+    spec = 2,
+    ssl = false,
+    sslcert = ,
+    sslkey = [39m
+[39m  console.error node_modules/jest-jasmine2/build/jasmine/Env.js:157
+    Unhandled error
+
+  console.error node_modules/jest-jasmine2/build/jasmine/Env.js:158
+    PopsicleError: Unable to connect to "http://127.0.0.1:8080/pact"
+    Caused by: Error: connect ECONNREFUSED 127.0.0.1:8080
+        at Request.Object.<anonymous>.Request.error (C:\Users\garciamo\PoCs\pact\code-examples\pact\pact-react-consumer\node_modules\popsicle\src\request.ts:91:12)
+        at ClientRequest.<anonymous> (C:\Users\garciamo\PoCs\pact\code-examples\pact\pact-react-consumer\node_modules\popsicle\src\index.ts:218:31)
+        at ClientRequest.emit (events.js:182:13)
+        at Socket.socketErrorListener (_http_client.js:392:9)
+        at Socket.emit (events.js:182:13)
+        at emitErrorNT (internal/streams/destroy.js:82:8)
+        at emitErrorAndCloseNT (internal/streams/destroy.js:50:3)
+        at process._tickCallback (internal/process/next_tick.js:63:19)
+
