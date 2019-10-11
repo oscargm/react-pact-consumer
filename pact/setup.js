@@ -1,7 +1,7 @@
 const path = require("path");
 const Pact = require("@pact-foundation/pact").Pact;
 
-global.port = 80;
+global.port = 82;
 global.provider = new Pact({
   cors: true,
   port: global.port,
