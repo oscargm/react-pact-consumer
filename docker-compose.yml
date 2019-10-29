@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  # Postgres and pact-broker settings were copied from https://github.com/DiUS/pact_broker-docker/blob/master/docker-compose.yml
+  postgres:
+    image: postgres:latest
+    healthcheck:
+      test: psql postgres --command "select 1" -U postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: postgres
+  pact_broker:
+    image: dius/pact-broker:latest
+    ports:
+      - "82:80"
+    links:
+      - postgres
+    environment:
+      PACT_BROKER_DATABASE_USERNAME: postgres
+      PACT_BROKER_DATABASE_PASSWORD: password
+      PACT_BROKER_DATABASE_HOST: postgres
+      PACT_BROKER_DATABASE_NAME: postgres
+      PACT_BROKER_WEBHOOK_SCHEME_WHITELIST: http https
+  jenkins:
+    image: jenkins/jenkins:latest
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+  bitbucket:
+    image: atlassian/bitbucket-server:5.12.2
+    ports:
+      - "7990:7990"
+      - "7999:7999"
