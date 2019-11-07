@@ -1,6 +1,6 @@
 import HeroService from './hero.service';
 import * as Pact from '@pact-foundation/pact';
-import Hero from '../model/hero';
+import Hero from '../../../model/hero';
 
 describe('HeroService API', () => {
   const heroService = new HeroService('http://localhost', global.port);

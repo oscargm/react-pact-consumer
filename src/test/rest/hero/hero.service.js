@@ -1,4 +1,4 @@
-import Hero from '../model/hero';
+import Hero from '../../../model/hero';
 import adapter from 'axios/lib/adapters/http';
 const axios = require('axios');
 
