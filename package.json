@@ -23,8 +23,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "test:pact": "cross-env CI=true react-scripts test --runInBand --setupFiles ./pact/setup.js --setupTestFrameworkScriptFile ./pact/jest-wrapper.js --testMatch \"**/*.test.pact.js\"",
-    "test:pact:graphql": "cross-env CI=true react-scripts test --runInBand --setupFiles ./pact/setup-graphql.js --setupTestFrameworkScriptFile ./pact/jest-wrapper.js --testMatch \"**/*.test.graphql.pact.js\"",
+    "test:pact": "cross-env CI=true react-scripts test --runInBand --setupFiles ./config/setup.js --setupTestFrameworkScriptFile ./config/jest-wrapper.js --testMatch \"**/*.test.pact.js\"",
+    "test:pact:graphql": "cross-env CI=true react-scripts test --runInBand --setupFiles ./config/setup-graphql.js --setupTestFrameworkScriptFile ./config/jest-wrapper.js --testMatch \"**/*.test.graphql.pact.js\"",
     "publish:pact": "node pact/publish.js",
     "eject": "react-scripts eject"
   },
