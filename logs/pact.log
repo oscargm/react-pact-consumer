@@ -1,5 +1,5 @@
-I, [2019-11-07T16:51:41.504496 #18268]  INFO -- : Registered expected interaction GET /heroes/42
-D, [2019-11-07T16:51:41.505497 #18268] DEBUG -- : {
+I, [2019-11-21T16:13:39.070518 #5848]  INFO -- : Registered expected interaction GET /heroes/42
+D, [2019-11-21T16:13:39.072521 #5848] DEBUG -- : {
   "description": "a GET request for a hero",
   "providerState": "a hero exists",
   "request": {
@@ -37,8 +37,8 @@ D, [2019-11-07T16:51:41.505497 #18268] DEBUG -- : {
     }
   }
 }
-I, [2019-11-07T16:51:41.524981 #18268]  INFO -- : Received request GET /heroes/42
-D, [2019-11-07T16:51:41.525980 #18268] DEBUG -- : {
+I, [2019-11-21T16:13:39.092519 #5848]  INFO -- : Received request GET /heroes/42
+D, [2019-11-21T16:13:39.093522 #5848] DEBUG -- : {
   "path": "/heroes/42",
   "query": "",
   "method": "get",
@@ -54,8 +54,8 @@ D, [2019-11-07T16:51:41.525980 #18268] DEBUG -- : {
     "Version": "HTTP/1.1"
   }
 }
-I, [2019-11-07T16:51:41.525980 #18268]  INFO -- : Found matching response for GET /heroes/42
-D, [2019-11-07T16:51:41.525980 #18268] DEBUG -- : {
+I, [2019-11-21T16:13:39.093522 #5848]  INFO -- : Found matching response for GET /heroes/42
+D, [2019-11-21T16:13:39.094521 #5848] DEBUG -- : {
   "status": 200,
   "headers": {
     "Content-Type": {
@@ -80,10 +80,10 @@ D, [2019-11-07T16:51:41.525980 #18268] DEBUG -- : {
     }
   }
 }
-I, [2019-11-07T16:51:41.535981 #18268]  INFO -- : Verifying - interactions matched
-I, [2019-11-07T16:51:41.546956 #18268]  INFO -- : Cleared interactions
-I, [2019-11-07T16:51:41.557956 #18268]  INFO -- : Registered expected interaction POST /heroes
-D, [2019-11-07T16:51:41.558955 #18268] DEBUG -- : {
+I, [2019-11-21T16:13:39.115519 #5848]  INFO -- : Verifying - interactions matched
+I, [2019-11-21T16:13:39.136518 #5848]  INFO -- : Cleared interactions
+I, [2019-11-21T16:13:39.149520 #5848]  INFO -- : Registered expected interaction POST /heroes
+D, [2019-11-21T16:13:39.149520 #5848] DEBUG -- : {
   "description": "a POST request to create a hero",
   "providerState": "provider allows hero creation",
   "request": {
@@ -133,8 +133,8 @@ D, [2019-11-07T16:51:41.558955 #18268] DEBUG -- : {
     }
   }
 }
-I, [2019-11-07T16:51:41.569991 #18268]  INFO -- : Received request POST /heroes
-D, [2019-11-07T16:51:41.569991 #18268] DEBUG -- : {
+I, [2019-11-21T16:13:39.170517 #5848]  INFO -- : Received request POST /heroes
+D, [2019-11-21T16:13:39.171517 #5848] DEBUG -- : {
   "path": "/heroes",
   "query": "",
   "method": "post",
@@ -157,8 +157,8 @@ D, [2019-11-07T16:51:41.569991 #18268] DEBUG -- : {
     "Version": "HTTP/1.1"
   }
 }
-I, [2019-11-07T16:51:41.570958 #18268]  INFO -- : Found matching response for POST /heroes
-D, [2019-11-07T16:51:41.571958 #18268] DEBUG -- : {
+I, [2019-11-21T16:13:39.173516 #5848]  INFO -- : Found matching response for POST /heroes
+D, [2019-11-21T16:13:39.173516 #5848] DEBUG -- : {
   "status": 201,
   "headers": {
     "Content-Type": {
@@ -183,11 +183,11 @@ D, [2019-11-07T16:51:41.571958 #18268] DEBUG -- : {
     }
   }
 }
-I, [2019-11-07T16:51:41.579957 #18268]  INFO -- : Verifying - interactions matched
-I, [2019-11-07T16:51:41.590990 #18268]  INFO -- : Cleared interactions
-I, [2019-11-07T16:51:41.601956 #18268]  INFO -- : Updating pact for provider at C:/Users/garciamo/PoCs/pact/pacts/consumer-provider.json
-I, [2019-11-07T16:51:41.609956 #18268]  INFO -- : *****************************************************************************
-I, [2019-11-07T16:51:41.609956 #18268]  INFO -- : Updating existing file .C:/Users/garciamo/PoCs/pact/pacts/consumer-provider.json as pactfile_write_mode is :update
-I, [2019-11-07T16:51:41.610959 #18268]  INFO -- : Only interactions defined in this test run will be updated.
-I, [2019-11-07T16:51:41.610959 #18268]  INFO -- : As interactions are identified by description and provider state, pleased note that if either of these have changed, the old interactions won't be removed from the pact file until the specs are next run with :pactfile_write_mode => :overwrite.
-I, [2019-11-07T16:51:41.610959 #18268]  INFO -- : *****************************************************************************
+I, [2019-11-21T16:13:39.192518 #5848]  INFO -- : Verifying - interactions matched
+I, [2019-11-21T16:13:39.203039 #5848]  INFO -- : Cleared interactions
+I, [2019-11-21T16:13:39.214039 #5848]  INFO -- : Updating pact for provider at C:/Users/garciamo/PoCs/pact/pacts/consumer-provider.json
+I, [2019-11-21T16:13:39.232043 #5848]  INFO -- : *****************************************************************************
+I, [2019-11-21T16:13:39.233042 #5848]  INFO -- : Updating existing file .C:/Users/garciamo/PoCs/pact/pacts/consumer-provider.json as pactfile_write_mode is :update
+I, [2019-11-21T16:13:39.233042 #5848]  INFO -- : Only interactions defined in this test run will be updated.
+I, [2019-11-21T16:13:39.233042 #5848]  INFO -- : As interactions are identified by description and provider state, pleased note that if either of these have changed, the old interactions won't be removed from the pact file until the specs are next run with :pactfile_write_mode => :overwrite.
+I, [2019-11-21T16:13:39.233042 #5848]  INFO -- : *****************************************************************************

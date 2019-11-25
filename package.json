@@ -25,7 +25,7 @@
     "test": "react-scripts test",
     "test:pact": "cross-env CI=true react-scripts test --runInBand --setupFiles ./config/setup.js --setupTestFrameworkScriptFile ./config/jest-wrapper.js --testMatch \"**/*.test.pact.js\"",
     "test:pact:graphql": "cross-env CI=true react-scripts test --runInBand --setupFiles ./config/setup-graphql.js --setupTestFrameworkScriptFile ./config/jest-wrapper.js --testMatch \"**/*.test.graphql.pact.js\"",
-    "publish:pact": "node pact/publish.js",
+    "publish:pact": "node config/publish.js",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
