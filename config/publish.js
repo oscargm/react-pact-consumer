@@ -7,7 +7,9 @@ let opts = {
   pactBroker: 'http://localhost:82',
   // pactBrokerUsername: process.env.PACT_USERNAME,
   // pactBrokerPassword: process.env.PACT_PASSWORD,
-  consumerVersion: '2.0.0'
+  consumerVersionTag: 'prod',
+  tags: ['prod'],
+  consumerVersion: '2.1.0'
 };
 
 publisher
